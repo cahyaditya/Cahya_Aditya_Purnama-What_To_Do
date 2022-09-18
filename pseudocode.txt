@@ -9,3 +9,15 @@ FUNCTION allData()
     FOR i IN TABLE listToDo 
         PRINT "judul", "keterangan", "tanggalDeadline"
 END FUNCTION
+
+FUNCTION create()
+    DISPLAY FORM 
+    INPUT "judul", "keterangan", "tanggalDeadline"
+    IF CLICK BUTTON "Simpan"
+        IF CLICK BUTTON "Iya"
+            READ DATABASE
+            INSERT TO TABLE listToDo "judul", "keterangan", "tanggalDeadline"
+            PRINT "Data berhasil disimpan"
+        ELIF CLICK BUTTON "Tidak"
+            BACK TO DISPLAY FORM
+END FUNCTION
