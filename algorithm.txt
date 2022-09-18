@@ -2,3 +2,6 @@ Aplikasi ini mempunyai algorithm seperti berikut :
 
 1. Mulai
 2. Menampilkan menu awal dengan menampilkan seluruh to do list
+3. Klik tambah pada menu
+4. Mengisi judul, keterangan, dan tanggal deadline pada form yang ditampilkan
+5. Klik simpan 
