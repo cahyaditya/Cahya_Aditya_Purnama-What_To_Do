@@ -21,3 +21,9 @@ FUNCTION create()
         ELIF CLICK BUTTON "Tidak"
             BACK TO DISPLAY FORM
 END FUNCTION
+
+FUNCTION main()
+    CALL FUNCTION allData()
+    IF CLICK BUTTON "Tambah Data"
+        CALL FUNCTION create()
+END FUNCTION
