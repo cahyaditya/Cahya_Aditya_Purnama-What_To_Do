@@ -3,3 +3,9 @@ PROGRAM WHAT TO DO
 READ AND WRITE "judul" with string
 READ AND WRITE "keterangan" with string
 READ AND WRITE "tanggalDeadline" with string
+
+FUNCTION allData()
+    READ DATABASE
+    FOR i IN TABLE listToDo 
+        PRINT "judul", "keterangan", "tanggalDeadline"
+END FUNCTION
