@@ -5,3 +5,6 @@ Aplikasi ini mempunyai algorithm seperti berikut :
 3. Klik tambah pada menu
 4. Mengisi judul, keterangan, dan tanggal deadline pada form yang ditampilkan
 5. Klik simpan 
+6. Klik "iya" pada konfirmasi jika yakin akan menyimpan to do list
+7. klik "tidak" pada konfirmasi jika tidak jadi menyimpan to do list
+8. Selesai
