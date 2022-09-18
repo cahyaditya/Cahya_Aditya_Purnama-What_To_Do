@@ -27,3 +27,5 @@ FUNCTION main()
     IF CLICK BUTTON "Tambah Data"
         CALL FUNCTION create()
 END FUNCTION
+
+CALL FUNCTION main()
