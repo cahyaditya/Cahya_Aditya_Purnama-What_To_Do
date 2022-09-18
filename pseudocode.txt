@@ -1,0 +1,31 @@
+PROGRAM WHAT TO DO
+
+READ AND WRITE "judul" with string
+READ AND WRITE "keterangan" with string
+READ AND WRITE "tanggalDeadline" with string
+
+FUNCTION allData()
+    READ DATABASE
+    FOR i IN TABLE listToDo 
+        PRINT "judul", "keterangan", "tanggalDeadline"
+END FUNCTION
+
+FUNCTION create()
+    DISPLAY FORM 
+    INPUT "judul", "keterangan", "tanggalDeadline"
+    IF CLICK BUTTON "Simpan"
+        IF CLICK BUTTON "Iya"
+            READ DATABASE
+            INSERT TO TABLE listToDo "judul", "keterangan", "tanggalDeadline"
+            PRINT "Data berhasil disimpan"
+        ELIF CLICK BUTTON "Tidak"
+            BACK TO DISPLAY FORM
+END FUNCTION
+
+FUNCTION main()
+    CALL FUNCTION allData()
+    IF CLICK BUTTON "Tambah Data"
+        CALL FUNCTION create()
+END FUNCTION
+
+CALL FUNCTION main()
